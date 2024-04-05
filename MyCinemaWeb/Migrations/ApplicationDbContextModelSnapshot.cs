@@ -10,8 +10,8 @@ using MyCinemaWeb.Data;
 
 namespace MyCinemaWeb.Migrations
 {
-    [DbContext(typeof(ApllicationDbContext))]
-    partial class ApllicationDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ApplicationDbContext))]
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

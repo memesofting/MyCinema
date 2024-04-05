@@ -3,9 +3,9 @@ using MyCinemaWeb.Models;
 
 namespace MyCinemaWeb.Data
 {
-	public class ApllicationDbContext :DbContext
+	public class ApplicationDbContext :DbContext
 	{
-		public ApllicationDbContext(DbContextOptions<ApllicationDbContext> options) :base(options)
+		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) :base(options)
 		{
 			
 		}

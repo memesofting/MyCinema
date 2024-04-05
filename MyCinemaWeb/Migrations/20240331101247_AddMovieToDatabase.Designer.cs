@@ -11,7 +11,7 @@ using MyCinemaWeb.Data;
 
 namespace MyCinemaWeb.Migrations
 {
-    [DbContext(typeof(ApllicationDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240331101247_AddMovieToDatabase")]
     partial class AddMovieToDatabase
     {
