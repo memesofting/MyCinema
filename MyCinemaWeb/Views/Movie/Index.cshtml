@@ -1,7 +1,33 @@
-﻿
+﻿@model IEnumerable<Movie>
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index Movie</h1>
+<h1>Movies</h1>
+
+<table class"table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr style="background:skyblue">
+            <th>
+                Title
+            </th>
+            <th>
+                Genre
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td width="50%">
+                    @obj.Title
+                </td>
+                <td width="50%">
+                    @obj.Genre
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
 

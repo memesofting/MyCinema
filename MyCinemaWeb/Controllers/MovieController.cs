@@ -1,5 +1,6 @@
 ﻿using MyCinemaWeb.Data;
 using Microsoft.AspNetCore.Mvc;
+using MyCinemaWeb.Models;
 
 namespace MyCinemaWeb.Controllers
 {
@@ -13,8 +14,8 @@ namespace MyCinemaWeb.Controllers
 		}
 		public IActionResult Index()
 		{
-			var objMovieList = _db.Movies.ToList();
-			return View();
+			IEnumerable<Movie> objMovieList = _db.Movies;
+			return View(objMovieList);
 		}
 	}
 }
